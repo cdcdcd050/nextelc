@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NEXTELC (넥스트전자) — Android app developer</title>
-<meta name="description" content="NEXTELC (넥스트전자) is a sole proprietorship in the Republic of Korea that develops small, private-by-default Android apps. Publisher of Chattering, a calendar app.">
+<title>NEXTELC (넥스트전자)</title>
+<meta name="description" content="NEXTELC (넥스트전자) is a business registered in the Republic of Korea. Its work is Android application development.">
 <meta name="author" content="NEXTELC">
 <link rel="canonical" href="https://cdcdcd050.github.io/nextelc/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="NEXTELC (넥스트전자)">
-<meta property="og:description" content="A one-person Korean software business making small, private-by-default Android apps.">
+<meta property="og:description" content="A business registered in the Republic of Korea. Android application development.">
 <meta property="og:url" content="https://cdcdcd050.github.io/nextelc/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316325C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Cpath d='M3 9h18M8 2v3M16 2v3'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316325C'/%3E%3Ctext x='32' y='45' font-family='Segoe UI,Helvetica,Arial,sans-serif' font-size='38' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
 
 <script type="application/ld+json">
 {
@@ -39,14 +39,10 @@
   :root{
     color-scheme: light dark;
     --bg:#ffffff; --fg:#1a1c20; --dim:#6b7280; --line:#e3e6ec;
-    --card:#f7f8fb; --accent:#16325C;
-    --max:44rem;
+    --max:40rem;
   }
   @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#14161a; --fg:#e8eaee; --dim:#9aa1ad; --line:#2c3039;
-      --card:#1c1f25; --accent:#9db8e8;
-    }
+    :root{ --bg:#14161a; --fg:#e8eaee; --dim:#9aa1ad; --line:#2c3039; }
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -59,16 +55,12 @@
   a{color:inherit}
   a:hover{text-decoration:none}
 
-  /* header */
-  header{padding:3.4rem 0 2.4rem; border-bottom:1px solid var(--line)}
-  .brand{display:flex; align-items:center; gap:.85rem}
-  .brand svg{width:44px; height:44px; flex:none}
+  header{padding:3.6rem 0 2.6rem; border-bottom:1px solid var(--line)}
   .brand h1{margin:0; font-size:1.9rem; letter-spacing:.06em; font-weight:700; line-height:1.2}
   .brand h1 .ko{display:block; font-size:.95rem; font-weight:400; color:var(--dim); letter-spacing:0; line-height:1.6}
   .tag{margin:1.1rem 0 0; font-size:1.05rem}
   .tag .ko{display:block; font-size:.92rem; color:var(--dim); margin-top:.25rem}
 
-  /* sections */
   section{padding:2.6rem 0; border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:0}
   h2{font-size:1.15rem; margin:0 0 1rem; letter-spacing:.01em}
@@ -77,39 +69,16 @@
   p:last-child{margin-bottom:0}
   .ko-block{color:var(--dim); font-size:.93rem}
 
-  /* product card */
-  .app{
-    display:flex; gap:1.1rem; align-items:flex-start;
-    background:var(--card); border:1px solid var(--line);
-    border-radius:.85rem; padding:1.15rem 1.2rem;
-  }
-  .app > svg{width:56px; height:56px; flex:none; border-radius:.75rem}
-  .app h3{margin:.1rem 0 .15rem; font-size:1.1rem}
-  .app h3 .ko{font-weight:400; color:var(--dim); font-size:.9rem; margin-left:.4rem}
-  .app p{font-size:.95rem}
-  .stores{margin:.85rem 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:.4rem}
-  .stores li{
-    font-size:.8rem; padding:.18rem .55rem; border-radius:99px;
-    border:1px solid var(--line); color:var(--dim); background:var(--bg);
-  }
-  .stores li.live{border-color:var(--accent); color:var(--accent); font-weight:600}
-  .links{margin:.9rem 0 0; font-size:.92rem}
-  .links a{margin-right:1rem; white-space:nowrap}
-
-  /* contact */
-  .mail{display:inline-block; margin:.2rem 0 .8rem; font-size:1.05rem; font-weight:600; word-break:break-all}
+  .mail{display:inline-block; margin:.2rem 0 .9rem; font-size:1.05rem; font-weight:600; word-break:break-all}
   dl{margin:.4rem 0 0; display:grid; grid-template-columns:auto 1fr; gap:.7rem 1.2rem; font-size:.95rem}
   dt{color:var(--dim); white-space:nowrap; line-height:1.45}
   dd{margin:0; line-height:1.45}
   dt .ko, dd .ko{font-size:.88rem}
 
   footer{padding:2rem 0 3.2rem; font-size:.83rem; color:var(--dim)}
-  footer p{margin:0 0 .45rem}
+  footer p{margin:0}
 
-  @media (max-width:30rem){
-    .brand h1{font-size:1.6rem}
-    .app{flex-direction:column; gap:.8rem}
-  }
+  @media (max-width:30rem){ .brand h1{font-size:1.6rem} }
 </style>
 </head>
 <body>
@@ -117,18 +86,11 @@
 <header>
   <div class="wrap">
     <div class="brand">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="3" y="3" width="18" height="18" rx="2"/>
-        <path d="M3 9h18"/><path d="M8 2v3"/><path d="M16 2v3"/>
-      </svg>
       <h1>NEXTELC<span class="ko" lang="ko">넥스트전자</span></h1>
     </div>
     <p class="tag">
-      A one-person software business in the Republic of Korea, making small,
-      private-by-default Android apps.
-      <span class="ko" lang="ko">대한민국의 1인 소프트웨어 사업자입니다.
-      개인정보를 모으지 않는 작은 안드로이드 앱을 만듭니다.</span>
+      Android application development, Republic of Korea.
+      <span class="ko" lang="ko">대한민국에서 안드로이드 앱을 개발합니다.</span>
     </p>
   </div>
 </header>
@@ -139,96 +101,31 @@
 <section id="about">
   <div class="wrap">
     <h2>About<span class="ko" lang="ko">소개</span></h2>
-    <p>NEXTELC (Korean trade name <strong lang="ko">넥스트전자</strong>) is a sole
-    proprietorship registered in the Republic of Korea. It designs, builds and publishes
-    Android applications, and is the developer and publisher of every app listed below.</p>
-    <p>The apps are deliberately small. They run entirely on the device, they carry no
-    advertising, analytics or tracking SDKs, and they ask for the fewest permissions the
-    feature actually needs.</p>
-    <p class="ko-block" lang="ko">넥스트전자(영문 NEXTELC)는 대한민국에 등록된 개인사업자입니다.
-    안드로이드 앱을 직접 만들어 배포하며, 아래 앱들의 개발자이자 배포자입니다.
-    앱은 기기 안에서만 동작하고, 광고·분석·추적 도구를 담지 않으며, 기능에 실제로
-    필요한 권한만 요청합니다.</p>
-  </div>
-</section>
-
-<!-- Apps -->
-<section id="apps">
-  <div class="wrap">
-    <h2>Apps<span class="ko" lang="ko">앱</span></h2>
-
-    <div class="app">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <defs>
-          <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="24" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E9EEF6"/>
-          </linearGradient>
-        </defs>
-        <rect width="24" height="24" rx="5.63" fill="url(#cbg)"/>
-        <g transform="translate(12 11.5) scale(0.826) translate(-12 -11.5)">
-          <rect x="5.20" y="10.60" width="5.29" height="3.19" rx="1" fill="#E53935"/>
-          <rect x="13.51" y="11.06" width="5.29" height="3.19" rx="1" fill="#F9A825"/>
-          <rect x="5.96" y="15.61" width="5.29" height="3.19" rx="1" fill="#00897B"/>
-          <g fill="none" stroke="#16325C" stroke-width="1.75"
-             stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <path d="M3 9h18"/><path d="M8 2v3"/><path d="M16 2v3"/>
-          </g>
-        </g>
-      </svg>
-      <div>
-        <h3>Chattering<span class="ko" lang="ko">채터링</span></h3>
-        <p>An Android calendar app you write in directly — tap a day and a note opens right
-        beside that cell. Events, anniversaries, multi-day spans, repeats, alarms, a memo
-        page and an optional lunar-calendar reading. Everything stays on the device: the app
-        does not declare the internet permission at all.</p>
-        <p class="ko-block" lang="ko">달력 칸에서 바로 적는 안드로이드 달력 앱입니다.
-        날짜를 누르면 그 칸 옆에 쪽지가 열립니다. 일정·기념일·기간·반복·알람·메모와
-        음력 보기를 담았고, 모든 자료는 기기 안에만 있습니다 —
-        앱에 인터넷 권한이 아예 없습니다.</p>
-        <ul class="stores">
-          <li class="live">ONE Store &mdash; available</li>
-          <li>Galaxy Store &mdash; coming</li>
-          <li>Google Play &mdash; coming</li>
-        </ul>
-        <p class="links">
-          <a href="https://cdcdcd050.github.io/chattering/">App page &amp; privacy policy</a>
-          <a href="mailto:cdcdcd050@naver.com?subject=Chattering">Support</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Privacy -->
-<section id="privacy">
-  <div class="wrap">
-    <h2>Privacy<span class="ko" lang="ko">개인정보</span></h2>
-    <p>NEXTELC does not collect, store or receive personal data from the users of its apps.
-    There are no accounts and no sign-in. What you write stays on your own device.</p>
-    <p>Each app publishes its own privacy policy, linked from that app&rsquo;s page above and
-    from its store listing.</p>
-    <p class="ko-block" lang="ko">넥스트전자는 앱 이용자의 개인정보를 수집하거나 보관하거나
-    전달받지 않습니다. 계정도 로그인도 없으며, 적으신 내용은 이용자의 기기 안에만 남습니다.
-    앱마다 개인정보처리방침이 따로 있고, 위의 앱 페이지와 각 스토어 등록정보에서 보실 수 있습니다.</p>
-    <p class="links"><a href="https://cdcdcd050.github.io/chattering/">Chattering &mdash; Privacy Policy / 개인정보처리방침</a></p>
+    <p>NEXTELC (Korean trade name <strong lang="ko">넥스트전자</strong>) is a business
+    registered in the Republic of Korea.</p>
+    <p>Its work is Android application development — the design, implementation, release and
+    maintenance of mobile applications, published under the NEXTELC name on Korean and
+    international app stores.</p>
+    <p class="ko-block" lang="ko">넥스트전자(영문 NEXTELC)는 대한민국에 등록된 사업자입니다.
+    하는 일은 안드로이드 앱 개발입니다 — 모바일 앱의 설계·구현·출시·유지보수를 맡으며,
+    국내외 앱 스토어에 넥스트전자 이름으로 배포합니다.</p>
   </div>
 </section>
 
 <!-- Contact -->
 <section id="contact">
   <div class="wrap">
-    <h2>Contact &amp; support<span class="ko" lang="ko">문의</span></h2>
-    <p>Questions, bug reports and support requests for any of our apps go to the same
-    address. Korean and English are both fine; we normally reply within a few days.</p>
-    <p class="ko-block" lang="ko">앱에 관한 문의·오류 신고·지원 요청은 아래 주소로 보내 주십시오.
+    <h2>Contact<span class="ko" lang="ko">문의</span></h2>
+    <p>Enquiries and support requests are received by email. Korean and English are both
+    fine; we normally reply within a few days.</p>
+    <p class="ko-block" lang="ko">문의와 지원 요청은 이메일로 받습니다.
     한국어와 영어 모두 괜찮으며, 보통 며칠 안에 답신드립니다.</p>
     <a class="mail" href="mailto:cdcdcd050@naver.com">cdcdcd050@naver.com</a>
     <dl>
       <dt>Business name<br><span class="ko" lang="ko">상호</span></dt>
       <dd>NEXTELC<br><span class="ko" lang="ko">넥스트전자</span></dd>
-      <dt>Type<br><span class="ko" lang="ko">형태</span></dt>
-      <dd>Sole proprietorship, Republic of Korea<br><span class="ko" lang="ko">개인사업자 (대한민국)</span></dd>
+      <dt>Country<br><span class="ko" lang="ko">국가</span></dt>
+      <dd>Republic of Korea<br><span class="ko" lang="ko">대한민국</span></dd>
       <dt>Email<br><span class="ko" lang="ko">이메일</span></dt>
       <dd><a href="mailto:cdcdcd050@naver.com">cdcdcd050@naver.com</a></dd>
     </dl>
@@ -240,7 +137,6 @@
 <footer>
   <div class="wrap">
     <p>&copy; 2026 NEXTELC (<span lang="ko">넥스트전자</span>). All rights reserved.</p>
-    <p>Product icons are derived from <a href="https://lucide.dev/">lucide</a>, used under the ISC licence.</p>
   </div>
 </footer>
 
